@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/estilos.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="contenedorTodo">
+            <div class="cajaTrasera">
+                <div class="cajaTraseraLogin">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para ingresar</p>
+                    <button id="btnIniciarSesion">Iniciar sesión</button>
+                </div>
+                <div class="cajaTraseraRegistro">
+                    <h3>Aún no tengo una cuenta</h3>
+                    <p>Regístrate para iniciar sesión</p>
+                    <button id="btnRegistrarse">Registrarme</button>
+                </div>
+            </div>
+<!-- Formulario de login y registro -->
+            <div class="contenedorLoginRegistro">
+                <!-- Login -->
+                <form action="" class="formularioLogin">
+
+                    <h2>Iniciar sesión</h2>
+                    <input type="number" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button onclick="window.location.href='interfaz1.html';">Entrar</button>
+
+                </form>
+                <!-- Registro -->
+                <form action="" class="formularioRegistro">
+
+                    <h2>Regístrate</h2>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="text" placeholder="Correo electronico" required>
+                    <input type="number" placeholder="Cédula"  required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button>Registro completo</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
