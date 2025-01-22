@@ -10,8 +10,8 @@ let formularioLogin = document.querySelector('.formularioLogin');
 let formularioRegistro = document.querySelector('.formularioRegistro');
 let cajaTraseraLogin = document.querySelector('.cajaTraseraLogin');
 let cajaTraseraRegistro = document.querySelector('.cajaTraseraRegistro');
-const usuarioCorrecto = '1152715543';
-const contraseñaCorrecta = 'Wsgzxc123467.';
+const usuarioCorrecto = '123';
+const contraseñaCorrecta = 'contraseña123';
 const botonEntrar = document.getElementById('btnEntrar');
 
 function anchoPagina(){
