@@ -10,7 +10,9 @@ let formularioLogin = document.querySelector('.formularioLogin');
 let formularioRegistro = document.querySelector('.formularioRegistro');
 let cajaTraseraLogin = document.querySelector('.cajaTraseraLogin');
 let cajaTraseraRegistro = document.querySelector('.cajaTraseraRegistro');
-
+const usuarioCorrecto = '1152715543';
+const contraseñaCorrecta = 'Wsgzxc123467.';
+const botonEntrar = document.getElementById('btnEntrar');
 
 function anchoPagina(){
     if(window.innerWidth > 850 ){
@@ -63,3 +65,14 @@ function registro(){
     }
 
 }
+
+botonEntrar.addEventListener('click', function(){
+    const usuario = document.getElementById('usuario').value;
+    const contraseña = document.getElementById('contraseña').value;
+
+    if(usuario === usuarioCorrecto && contraseña === contraseñaCorrecta){
+        window.location.href="interfaz1.html";
+    }else{
+        alert('Usuario o contraseña incorrecta');
+    }
+});

@@ -251,6 +251,7 @@ body.interfaz1{
 
 .contenedorTabla div{
     margin: 4px;
+    padding: 5px;
 }
 
 .contenedorTabla div:hover{
