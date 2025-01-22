@@ -71,7 +71,7 @@ botonEntrar.addEventListener('click', function(){
     const contraseña = document.getElementById('contraseña').value;
 
     if(usuario === usuarioCorrecto && contraseña === contraseñaCorrecta){
-        window.location.href="interfaz1.html";
+        window.location.href = './interfaz1.html';
     }else{
         alert('Usuario o contraseña incorrecta');
     }
