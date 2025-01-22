@@ -66,12 +66,15 @@ function registro(){
 
 }
 
-botonEntrar.addEventListener('click', function(){
+botonEntrar.addEventListener('click', function(e){
+    
+    e.preventDefault()
+
     const usuario = document.getElementById('usuario').value;
     const contraseña = document.getElementById('contraseña').value;
 
     if(usuario === usuarioCorrecto && contraseña === contraseñaCorrecta){
-        window.location.href = './interfaz1.html';
+        window.location.href = 'interfaz1.html';
     }else{
         alert('Usuario o contraseña incorrecta');
     }
