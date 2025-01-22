@@ -222,10 +222,15 @@ body.interfaz1{
 }
 
 .main2 h2{
-    margin: 20px 40px;
+    margin: 0 auto;
+    padding: 0px;
     text-align: center;
     font-size: 40px;
     color: rgba(68, 68, 68, 0.856);
+}
+
+.main2 h2:hover{
+    color: white;
 }
 
 .contenedorTabla{
@@ -249,15 +254,19 @@ body.interfaz1{
     color: rgba(33, 243, 191);
 }
 
+.contenedorTabla div h3:hover{
+    color: black;
+}
+
 .contenedorTabla div{
     margin: 4px;
     padding: 5px;
 }
 
-.contenedorTabla div:hover{
+.contenedorTabla a div:hover{
+    color: black;
     background-color: rgba(255, 255, 255, 0.349);
     border-radius: 20px;
-
 }
 
 .contenedorTabla img{
