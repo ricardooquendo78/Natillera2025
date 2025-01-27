@@ -272,3 +272,60 @@ body.interfaz1{
 .contenedorTabla img{
     width: 200px;    
 }
+
+/* Prestamos */
+
+body.prestamos1{
+    background-image: url(../img/dl.1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.prestamos1 header h1{
+    font-size: 36px;
+    margin: 80px auto 1px auto;
+    color: rgb(33, 243, 191);
+}
+
+
+.tablaPrestamos{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2px ;
+    border: none;
+    padding: 10px;
+    background-color:rgba(33, 243, 191, 0.432) ;
+    border-radius: 4px;
+}
+
+.tablaPrestamos table{
+    width: 100%;
+    max-width:600px;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 4px;
+}
+
+tr{
+    border: none;
+    margin: 2px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+td{
+    font-size: 10px;
+    border: none;
+    margin: 2px;
+    padding: 3px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    background-color: rgba(255, 255, 255, 0.459);
+}
