@@ -320,6 +320,8 @@ body.prestamos1{
     transition: all 300ms;
 }
 
+/* Tablas */
+
 .tablas{
     margin: 0 auto;
     text-align: center;
@@ -352,7 +354,7 @@ tr{
 }
 
 td{
-    font-size: 2vw;
+    font-size: 3vw;
     border: none;
     margin: 2px;
     padding: 3px;
