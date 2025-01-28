@@ -284,16 +284,26 @@ body.prestamos1{
 }
 
 .prestamos1 header h1{
-    font-size: 36px;
+    font-size: 46px;
     margin: 80px auto 1px auto;
     color: rgb(33, 243, 191);
 }
 
+.prestamos1 main{
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
 
 .tablaPrestamos{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
     width: 100%;
-    max-width: 600px;
-    margin-top: 2px ;
+    max-width: 900px;
+    margin-top: 40px;
     border: none;
     padding: 10px;
     background-color:rgba(33, 243, 191, 0.432) ;
@@ -302,7 +312,7 @@ body.prestamos1{
 
 .tablaPrestamos table{
     width: 100%;
-    max-width:600px;
+    max-width:900px;
     text-align: center;
     table-layout: fixed;
     border-collapse: collapse;
@@ -319,7 +329,7 @@ tr{
 }
 
 td{
-    font-size: 10px;
+    font-size: 2vw;
     border: none;
     margin: 2px;
     padding: 3px;
