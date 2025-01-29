@@ -180,6 +180,12 @@ body.interfaz1{
     background-image: url(../img/dl.3.jpg);
 }
 
+.iconos{
+    width: 10vw;
+    margin-top: 40px;
+    margin-bottom: -80px;
+}
+
 .main2{
     width: 100%;
     padding: 20px;
@@ -354,7 +360,7 @@ tr{
 }
 
 td{
-    font-size: 3vw;
+    font-size: 2.5vw;
     border: none;
     margin: 2px;
     padding: 3px;
