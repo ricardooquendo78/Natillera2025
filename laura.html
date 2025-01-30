@@ -18,10 +18,10 @@
         <h1>Laura</h1>
         <nav>
             <ul>
-                <a href="interfaz1.html"><button id="prestamos">Perfiles</button></a>
+                <a href="interfaz1.html"><button id="perfiles">Perfiles</button></a>
                 <a href="cierre.html"><button id="cierre">Cierre</button></a>
-                <a href="prestamos.html"><button id="cierre">Prestamos</button></a>
-                <a href=""><button id="cierre">Actualizar</button></a>
+                <a href="prestamos.html"><button id="prestamos">Prestamos</button></a>
+                <button type="button" id="btnActualizar" >Actualizar</button>
             </ul>
             
         </nav>
@@ -45,7 +45,18 @@
             </table>
         </div>
     </main>
-
-    <script src="./assets/js/script.js"></script>
+    <div id="overlay"></div>
+    <form id="formularioActualizar">
+        <h2>Actualizar Perfil</h2><br>
+        <label for="Fecha">Fecha</label><br>
+        <input type="date" id="fecha" placeholder="Fecha"><br>
+        <label for="Monto">Monto</label><br>
+        <input type="number" id="monto" placeholder="Monto"><br>
+        <label for="Mes">Mes</label><br>
+        <input type="month" id="mes" placeholder="Mes"><br>
+        <button type="submit" id="btnActualizarFormulario">Actualizar</button>
+        <button type="button" id="btnReset">Cancelar</button>
+    </form>
+    <script src="./assets/js/formularios.js"></script>
 </body>
 </html>
