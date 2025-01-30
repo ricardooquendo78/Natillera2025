@@ -141,6 +141,80 @@ main{
     margin-top: 10px;
 }
 
+/* Formulario Perfiles */
+
+
+
+#formularioActualizar{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(233, 233, 233);
+    padding: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.3);
+    border-radius: 20px;
+}
+
+#formularioActualizar h2{
+    font-size: 26px;
+    color: rgb(1, 87, 90);
+}
+
+#formularioActualizar label{
+    color: rgb(68, 68, 68);
+    margin-bottom: 4vw;
+    font-size: 20px;
+}
+
+#formularioActualizar input{
+    background-color: rgba(56, 248, 200, 0.253);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    color: rgba(156, 156, 156, 0.486);
+    padding: 4px;
+    margin: 10px;
+}
+
+#formularioActualizar input:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 8px;
+    transition: 500ms;
+    color: rgba(65, 243, 198, 0.582);
+    border: none;
+}
+
+#formularioActualizar button{
+    margin-top: 14px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: rgb(53, 53, 53);
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#formularioActualizar button:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 8px;
+    transition: 500ms;
+    color: rgba(65, 243, 198, 0.582);
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.5);
+}
+
 /* Responsive */
 
 @media screen and (max-width: 850px){

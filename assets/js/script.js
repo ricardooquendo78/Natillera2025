@@ -2,7 +2,6 @@ document.getElementById('btnIniciarSesion').addEventListener('click', iniciarSes
 document.getElementById('btnRegistrarse').addEventListener('click', registro);
 window.addEventListener('resize', anchoPagina);
 
-
 // Declaración de variables
 
 let contenedorLoginRegistro = document.querySelector('.contenedorLoginRegistro');
@@ -79,3 +78,4 @@ botonEntrar.addEventListener('click', function(e){
         alert('Usuario o contraseña incorrecta');
     }
 });
+
