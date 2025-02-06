@@ -23,6 +23,41 @@ function abrirFormulario (){
     });
 }
 
+document.getElementById('formularioActualizar').addEventListener('submit',function(event){
+    
+    event.preventDefault();
+
+    const fecha = document.getElementById('fecha').value;
+    const monto = document.getElementById('monto').value;
+    const mes = document.getElementById('mes').value;
+
+    if(fecha.trim() === '' || monto.trim() === '' || mes.trim() === ''){
+        alert('Todos los campos son obligatorios bb.');
+        return;
+    }
+
+    const tabla = document.getElementById('tablaPerfiles').getElementsByTagName('tbody')[0];
+
+    const nuevaFila = tabla.insertRow();
+    const celdaFecha = nuevaFila.insertCell(0);
+    const celdaMonto = nuevaFila.insertCell(1);
+    const celdaMes = nuevaFila.insertCell(2);
+    const celdaActualizar = nuevaFila.insertCell(3);
+
+    celdaFecha.textContent = fecha;
+    celdaMonto.textContent = monto;
+    celdaMes.textContent = mes;
+
+    const btnEliminar = document.createElement('button');
+    btnEliminar.textContent = 'Eliminar';
+    btnEliminar.onclick = function(){
+        tabla.removeChild(nuevaFila);
+    };
+    celdaActualizar.appendChild(btnEliminar);
+
+    document.getElementById('formularioActualizar').reset();
+
+});
 
 
 

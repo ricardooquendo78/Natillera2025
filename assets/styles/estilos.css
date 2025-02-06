@@ -6,6 +6,25 @@
     font-family: "Roboto Condensed", serif;
     font-size: large;
     }
+
+button{
+    padding: 10px 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background: transparent;
+    font-style: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all 300ms;
+}
+
+button:hover{
+    background: rgba(70, 70, 70, 0.479);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+ 
 body{
     background-image: url(../img/dl.2.jpg);
     background-size: cover;
@@ -437,6 +456,7 @@ tr{
 td{
     font-size: 2.5vw;
     border: none;
+    border-radius: 2px;
     margin: 2px;
     padding: 3px;
     text-align: center;
