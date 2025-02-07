@@ -24,7 +24,7 @@ function abrirFormulario (){
 }
 
 document.getElementById('formularioActualizar').addEventListener('submit',function(event){
-    
+
     event.preventDefault();
 
     const fecha = document.getElementById('fecha').value;
@@ -49,14 +49,18 @@ document.getElementById('formularioActualizar').addEventListener('submit',functi
     celdaMes.textContent = mes;
 
     const btnEliminar = document.createElement('button');
-    btnEliminar.textContent = 'Eliminar';
+    btnEliminar.textContent = 'X';
+    btnEliminar.style.padding = '15px';
+    btnEliminar.style.paddingTop = '3px';
+    btnEliminar.style.paddingBottom = '3px';
+    btnEliminar.style.marginBottom = '4px';
+    document.body.appendChild(btnEliminar);
     btnEliminar.onclick = function(){
         tabla.removeChild(nuevaFila);
     };
     celdaActualizar.appendChild(btnEliminar);
 
     document.getElementById('formularioActualizar').reset();
-
 });
 
 

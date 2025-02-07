@@ -556,6 +556,7 @@ body.perfiles{
 }
 
 .perfiles header nav button{
+    width: auto;
     padding: 10px 20px;
     margin: 20px 20px;
     border: none;
