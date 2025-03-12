@@ -21,25 +21,37 @@
             <ul>
                 <a href="interfaz1.html"><button id="prestamos">Perfiles</button></a>
                 <a href="cierre.html"><button id="cierre">Cierre</button></a>
-                <button type="button" id="btnActualizar" >Actualizar</button>
             </ul>
-            
         </nav>
     </header>
 
     <main>
         <div class="tablas">
             <table border="1">
-                <tr>
-                    <th>Fecha</th>
-                    <th>Nombre</th>
-                    <th>Monto</th>
-                    <th>Deuda</th>
-                    <th>Interes</th>
-                    <th>Fecha ultimo pago</th>
-                    <th>Estado</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Monto</th>
+                        <th>Deuda</th>
+                        <th>Interes</th>
+                        <th>Fecha ultimo pago</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                    </tr>
+                </tbody>
             </table>
+            <button id="btnSumarFila" style="padding: 2px 20px; margin-top: 6px;">+</button>
         </div>
     </main>
     
