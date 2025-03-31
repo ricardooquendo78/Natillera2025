@@ -27,7 +27,7 @@
 
     <main>
         <div class="tablas">
-            <table border="1">
+            <table  id="tblPrestamos" border="1" class="tablas">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -40,18 +40,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                        <td contenteditable="true"></td>
-                    </tr>
                 </tbody>
             </table>
-            <button id="btnSumarFila" style="padding: 2px 20px; margin-top: 6px;">+</button>
+            <button id="btnSumarFila" onClick="sumarFila()" style="padding: 2px 20px; margin-top: 6px;">+</button>
         </div>
     </main>
     

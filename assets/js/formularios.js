@@ -63,7 +63,35 @@ document.getElementById('formularioActualizar').addEventListener('submit',functi
     document.getElementById('formularioActualizar').reset();
 });
 
+// Prestamos
 
+function sumarFila(){
+    let tabla = document.getElementById('tblPrestamos').getElementsByTagName('tbody')[0];
+    let nuevaFila1 = tabla.insertRow();
+
+    let celdaFecha = nuevaFila1.insertCell(0);
+    let celdaNombre = nuevaFila1.insertCell(1);
+    let celdaMonto = nuevaFila1.insertCell(2);
+    let celdaDeuda = nuevaFila1.insertCell(3);
+    let celdaInteres = nuevaFila1.insertCell(4);
+    let celdaFechaUltimoPago = nuevaFila1.insertCell(5);
+    let celdaEstado = nuevaFila1.insertCell(6);
+
+    celdaFecha.innerHTML = '<input type="date" placeholder="Fecha">';
+    celdaNombre.innerHTML = '<input type="text" placeholder="Nombre">';
+    celdaMonto.innerHTML = '<input type="number" placeholder="Monto">';
+    celdaDeuda.innerHTML = '<input type="number" placeholder="Deuda">';
+    celdaInteres.innerHTML = '<input type="number" placeholder="Interes">';
+    celdaFechaUltimoPago.innerHTML = '<input type="date" placeholder="Fecha Ultimo Pago">';
+    // celdaEstado.innerHTML = '<input type="binomial" placeholder="Estado">';
+    celdaEstado.innerHTML = '<button onclick="eliminarFila(this)">Eliminar</button>';
+
+};
+
+function eliminarFila(boton) {
+    let fila = boton.parentNode.parentNode;
+    fila.parentNode.removeChild(fila);
+}
 
 
 //     botonActualizar.addEventListener('click', () => {
